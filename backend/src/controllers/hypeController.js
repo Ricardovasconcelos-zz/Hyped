@@ -9,16 +9,7 @@ module.exports ={
 
     async store(req,res){
 
-        const hype = Hype.create({
-            title,
-            description,
-            url,
-        })
-
-        return res.json(hype)
-    },
-
-    async store(req,res){
+        const {title, description, url} = req.body
 
         const hype = await Hype.create({
             title,

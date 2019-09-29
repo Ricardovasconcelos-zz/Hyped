@@ -1,10 +1,6 @@
 const {Schema, model} = require('mongoose')
 
 const Hype = new Schema({
-    docs:[],
-    total:Number,
-    limit:Number,
-
     title: {
         type:String,
         required: true
