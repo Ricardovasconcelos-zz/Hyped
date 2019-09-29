@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import api from '../services/api'
 
 import { 
     View, 
@@ -14,8 +15,19 @@ import {
             flex:1,
         },
       }
+    
+    componentDidMount(){
+        this.loadProducts();
+    }
 
+    loadProducts = async () =>{
+        const response = await api.get('/products');
 
+        const { docs } = response.data
+        console.log(docs)
+        
+    }
+    
     render(){
 
         return(
