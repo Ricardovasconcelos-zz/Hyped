@@ -9,7 +9,7 @@ import {
  class Main extends Component{
 
     static navigationOptions = {
-        headerTitle: 'TecHype',
+        headerTitle: 'Tá no Hype',
         headerTitleStyle: { 
             textAlign:"center", 
             flex:1,
